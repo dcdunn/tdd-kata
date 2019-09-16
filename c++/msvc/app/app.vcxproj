@@ -20,10 +20,10 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{81896FE5-3987-45F9-BE47-25776CE35819}</ProjectGuid>
+    <ProjectGuid>{5D43CBA7-C178-46FE-BD7C-B3FEEFAA2712}</ProjectGuid>
     <RootNamespace>GtestProject</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
-    <ProjectName>test</ProjectName>
+    <ProjectName>app</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -132,16 +132,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\test\main.cpp" />
-    <ClCompile Include="..\src\test\test_soundex.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="gmock\gmock.vcxproj">
-      <Project>{3d83f722-bff0-4bcc-99f2-45faed61999c}</Project>
-    </ProjectReference>
-    <ProjectReference Include="soundex\soundex.vcxproj">
-      <Project>{99cb94bd-0ba3-4642-9ec6-7f560d263e17}</Project>
-    </ProjectReference>
+    <ClCompile Include="..\..\src\app\main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

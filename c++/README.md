@@ -13,6 +13,17 @@ git clone https://github.com/google/googletest.git
 ```
 or download and unzip one of the [latest release](https://github.com/google/googletest/releases)
 
+## Building with CMake
+
+Create a build directory in the top-level C++ directory, and from that
+directory run the following command to configure:
+
+```
+cmake ../
+```
+
+Build with `make`, and run tests with `ctest -V`
+
+## Building with MSVC
+
 [Building and running on Windows](msvc/README.md)
-
-
